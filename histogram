@@ -1,0 +1,21 @@
+import matplotlib.pyplot as plt
+
+# India life expectancy (1985–2024, approx values)
+life_expectancy = [
+    56.1, 56.6, 57.2, 57.7, 58.2, 58.9, 59.4, 60.0, 60.7, 61.3,
+    61.9, 62.4, 63.0, 63.5, 64.1, 64.7, 65.2, 65.8, 66.3, 66.9,
+    67.5, 68.1, 68.6, 69.2, 69.7, 70.3, 70.8, 71.2, 71.7, 72.0,
+    72.3, 72.5, 72.8, 73.0, 73.3, 73.6, 73.8, 74.0, 74.2, 74.5
+]
+
+# Plot histogram like Tableau's example
+plt.figure(figsize=(10, 6))
+plt.hist(life_expectancy, bins=7, color='#008080', edgecolor='black')
+
+# Labels and styling
+plt.title("India's Life Expectancy Distribution (1985–2024)")
+plt.xlabel("Life Expectancy (Years)")
+plt.ylabel("Number of Years")
+plt.grid(axis='y', linestyle='--', alpha=0.6)
+plt.tight_layout()
+plt.show()
