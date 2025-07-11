@@ -1,0 +1,25 @@
+import matplotlib.pyplot as plt
+
+# Country names
+countries = [
+    "India", "China", "USA", "Indonesia", "Pakistan",
+    "Nigeria", "Brazil", "Bangladesh", "Russia", "Ethiopia",
+    "Mexico", "Japan", "Egypt", "Philippines", "DR Congo",
+    "Vietnam", "Iran", "Turkey", "Germany", "Thailand"
+]
+
+# Population in millions (2025 estimate)
+population_millions = [
+    1463.87, 1416.1, 347.28, 285.72, 255.22,
+    237.53, 212.81, 175.69, 144.0, 135.47,
+    131.95, 123.1, 118.37, 116.79, 112.83,
+    101.6, 92.42, 87.69, 84.08, 71.62
+]
+
+# Plotting
+plt.figure(figsize=(12, 8))
+plt.barh(countries[::-1], population_millions[::-1], color='skyblue')
+plt.xlabel("Population (in millions)")
+plt.title("Top 20 Most Populous Countries (2025 Estimate)")
+plt.tight_layout()
+plt.show()
